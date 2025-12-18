@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АНАСТАСИЯ | Дизайнер</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Shrift';
+            src: url('fonts/nastya.woff') format('woff');
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Shrift', 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f3ede4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+    
+.header {
+    min-height: 50vh;
+    background: linear-gradient(135deg, #ee6b00 0%, #f338be 100%);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-text {
+    text-align: left;
+    flex: 1;
+}
+
+.header-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+        .photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 8rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 2.5rem;
+            color: #ffffff;
+            letter-spacing: 1.5px;
+        }
+        
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #6a3bad;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+.video-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.my-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: #000;
+    display: block;
+}
+
+        
+        .portfolio-item {
+            flex: 1;
+            min-width: 250px;
+            background: #f3ede4;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #8a65cc;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #8a65cc;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #8a65cc;
+            transform: translateY(-3px);
+        }
+        
+.meme {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff9e6;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meme-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 123, 0, 0.2);
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .meme {
+        padding: 30px 15px;
+        margin-top: 30px;
+    }
+    
+    .meme-img {
+        max-width: 95%;
+    }
+}
+        /* ПОДВАЛ */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #6a3bad;
+            border-top: 2px solid #e6d4ff;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .subtitle { font-size: 1.2rem; }
+            .portfolio { flex-direction: column; }
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+<!-- ШАПКА С ФОТКОЙ -->
+<header class="header">
+    <div class="header-content">
+        <img src="настя.png" alt="Анастасия" class="header-photo">
+        <div class="header-text">
+            <h1>АНАСТАСИЯ</h1>
+            <p class="subtitle">почитатель кубов</p>
+        </div>
+    </div>
+</header>
+    
+    <section class="section">
+        <h2>обо мне</h2>
+        <p>привет!</p> 
+        <p>я анастасия — творческий человек, который находит красоту в простых вещах. даже в зелёных кубах!</p>
+    </section>
+    
+<section class="section">
+    <h2>мое портфолио</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">картины были изданы под псевдонимами, на самом деле они мои</p>
+    
+    <div class="gallery">
+        <div class="gallery-grid">
+
+            <div class="gallery-item" data-id="1" data-era="renaissance">
+                <div class="gallery-img-container">
+                    <img src="куб1.png" alt="Мона Лиза, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>мона кубиса</h4>
+                        <p>"её загадочная улыбка — просто игра света на гранях"</p>
+                        <button class="art-btn" onclick="showArtInfo(1)">о кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">01</span>
+                        <h4>мона кубиса</h4>
+                    </div>
+                    <p>леонардо кубинчи</p>
+                    <div class="art-tags">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="2" data-era="modern">
+                <div class="gallery-img-container">
+                    <img src="куб2.png" alt="Крик, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>крик куба</h4>
+                        <p>"куб услышал крик природы и застыл в ужасе"</p>
+                        <button class="art-btn" onclick="showArtInfo(2)">о кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">02</span>
+                        <h4>крик куба</h4>
+                    </div>
+                    <p>эдвард куб</p>
+                    <div class="art-tags">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="3" data-era="surrealism">
+                <div class="gallery-img-container">
+                    <img src="куб3.png" alt="The Son of Man, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>сын кубический</h4>
+                        <p>"куб перед лицом, скрывающий сущность"</p>
+                        <button class="art-btn" onclick="showArtInfo(3)">о кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">03</span>
+                        <h4>сын кубический</h4>
+                    </div>
+                    <p>рене кубитт</p>
+                    <div class="art-tags">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="4" data-era="postimpressionism">
+                <div class="gallery-img-container">
+                    <img src="куб4.png" alt="Ван Гог, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>автопортрет с кубом</h4>
+                        <p>"куб с отрезанным углом — метафора творческих мук"</p>
+                        <button class="art-btn" onclick="showArtInfo(4)">о кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">04</span>
+                        <h4>автопортрет с кубом</h4>
+                    </div>
+                    <p>винсент ван куб</p>
+                    <div class="art-tags">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="5" data-era="realism">
+                <div class="gallery-img-container">
+                    <img src="куб5.png" alt="Мать Уистлера, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>мать куба</h4>
+                        <p>"куб в строгом платье — символ геометрического материнства"</p>
+                        <button class="art-btn" onclick="showArtInfo(5)">о кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">05</span>
+                        <h4>аранжировка в сером и чёрном №1</h4>
+                    </div>
+                    <p>джеймс кубистер</p>
+                    <div class="art-tags">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-id="6" data-era="baroque">
+                <div class="gallery-img-container">
+                    <img src="куб6.png" alt="Девушка с жемчужной серёжкой, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>куб с жемчужной серёжкой</h4>
+                        <p>"жемчужина совершенства на фоне идеальных граней"</p>
+                        <button class="art-btn" onclick="showArtInfo(6)">о кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">06</span>
+                        <h4>девушка с жемчужной серёжкой</h4>
+                    </div>
+                    <p>ян кубеер, 1665</p>
+                </div>
+            </div>
+            
+
+            <div class="gallery-item favorite" data-id="7" data-era="renaissance">
+                <div class="gallery-img-container">
+                    <img src="куб7.png" alt="Создание Адама, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>создание куба</h4>
+                        <p>"бог даёт жизнь первому совершенному кубу"</p>
+                        <button class="art-btn" onclick=showArtInfo(7)>о кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">07</span>
+                        <h4>создание куба</h4>
+                    </div>
+                    <p>микеланджело кубонарроти</p>
+                </div>
+            </div>
+            
+            <!-- 8. Американская готика -->
+            <div class="gallery-item" data-id="8" data-era="american">
+                <div class="gallery-img-container">
+                    <img src="куб8.png" alt="Американская готика, но куб" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>американский куб</h4>
+                        <p>"куб с вилами — новый символ прагматичной америки"</p>
+                        <button class="art-btn" onclick="showArtInfo(8)">О кубе-шедевре</button>
+                    </div>
+                </div>
+                <div class="gallery-info">
+                    <div class="art-title">
+                        <span class="art-number">08</span>
+                        <h4>американский куб</h4>
+                    </div>
+                    <p>грант куб</p>
+                </div>
+            </div>
+        </div>
+    
+<div class="art-modal" id="artModal">
+    <div class="art-modal-content">
+        <button class="art-modal-close" onclick="closeArtModal()">×</button>
+        <div class="art-modal-body">
+            <div class="art-modal-left">
+                <img id="modalArtImage" src="" alt="" class="modal-art-img">
+            </div>
+            <div class="art-modal-right">
+                <h3 id="modalArtTitle"></h3>
+                <h4 id="modalArtSubtitle"></h4>
+                <p id="modalArtDescription"></p>
+                <div class="art-modal-funfact">
+                    <h5>факт о кубе:</h5>
+                    <p id="modalFunFact"></p>
+                </div>
+                <div class="art-modal-tags" id="modalArtTags"></div>
+                <button class="share-btn" onclick="shareArt()">
+                    <i class="fas fa-share-alt"></i> Поделиться кубом
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .gallery {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .gallery-item {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+    }
+    
+    .gallery-item:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(106, 59, 173, 0.15);
+    }
+    
+    .gallery-item.favorite {
+        border: 3px solid #ee6b00;
+    }
+    
+    /* КОНТЕЙНЕР ИЗОБРАЖЕНИЯ */
+    .gallery-img-container {
+        position: relative;
+        height: 320px;
+        overflow: hidden;
+    }
+    
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s;
+    }
+    
+    .gallery-item:hover .gallery-img {
+        transform: scale(1.1);
+    }
+    
+    .gallery-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(106, 59, 173, 0.95) 100%);
+        color: white;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+    
+    .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+    }
+    
+    .art-era {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    
+    .gallery-overlay h4 {
+        font-size: 1.5rem;
+        margin: 10px 0 5px;
+        color: white;
+    }
+    
+    .gallery-overlay p {
+        font-size: 0.95rem;
+        opacity: 0.9;
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+    
+    .art-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding-top: 10px;
+    }
+    
+    .art-btn {
+        background: white;
+        color: #6a3bad;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s;
+        align-self: flex-start;
+    }
+    
+    .art-btn:hover {
+        background: #ff9cd7;
+        transform: translateY(-2px);
+    }
+    
+    /* ИНФОРМАЦИЯ ПОД КАРТИНОЙ */
+    .gallery-info {
+        padding: 20px;
+    }
+    
+    .art-title {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .art-number {
+        font-size: 1.5rem;
+        color: #8a65cc;
+        font-weight: bold;
+    }
+    
+    .gallery-info h4 {
+        color: #333;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    
+    .gallery-info > p {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+    
+    .art-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .art-tags span {
+        background: #f3ede4;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        color: #666;
+    }
+    
+    .favorite-tag {
+        background: #ffebee !important;
+        color: #ee6b00 !important;
+    }
+    
+    /* ЛЕГЕНДА ГАЛЕРЕИ */
+    .gallery-legend {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px;
+        background: rgba(243, 237, 228, 0.5);
+        border-radius: 15px;
+        margin-top: 40px;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .legend-color {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+    
+    /* МОДАЛЬНОЕ ОКНО */
+    .art-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(5px);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .art-modal-content {
+        background: white;
+        border-radius: 20px;
+        max-width: 900px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        animation: modalAppear 0.4s;
+    }
+    
+    @keyframes modalAppear {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+    
+    .art-modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #6a3bad;
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .art-modal-body {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+    
+    @media (min-width: 768px) {
+        .art-modal-body {
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
+    
+    .art-modal-left {
+        flex: 1;
+    }
+    
+    .modal-art-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .art-modal-meta {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        color: #666;
+        font-size: 0.9rem;
+    }
+    
+    .art-modal-right {
+        flex: 1;
+    }
+    
+    .art-modal-right h3 {
+        color: #6a3bad;
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    
+    .art-modal-right h4 {
+        color: #8a65cc;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    
+    .art-modal-right p {
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    
+    .art-modal-funfact {
+        background: #f9f4ff;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        border-left: 4px solid #ee6b00;
+    }
+    
+    .art-modal-funfact h5 {
+        color: #6a3bad;
+        margin-bottom: 10px;
+    }
+    
+    .share-btn {
+        background: linear-gradient(135deg, #ee6b00, #f338be);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    /* АДАПТИВ */
+    @media (max-width: 768px) {
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-img-container {
+            height: 250px;
+        }
+        
+        .gallery-legend {
+            gap: 15px;
+        }
+        
+        .art-modal-body {
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .gallery-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+
+<script>
+    // ДОБАВЬ ЭТО В САМОМ НАЧАЛЕ СКРИПТА
+    function closeArtModal() {
+        const modal = document.getElementById('artModal');
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    }
+    
+    function showArtInfo(id) {
+        currentArtId = id;
+        const art = artData[id];
+        const modal = document.getElementById('artModal');
+        
+        document.getElementById('modalArtImage').src = `куб${id}.png`;
+        document.getElementById('modalArtTitle').textContent = art.title;
+        document.getElementById('modalArtSubtitle').textContent = art.subtitle;
+        document.getElementById('modalArtDescription').textContent = art.description;
+        document.getElementById('modalFunFact').textContent = art.funFact;
+        
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function shareArt() {
+        const art = artData[currentArtId];
+        const text = `Посмотри на ${art.title} — ${art.subtitle}!\n"${art.funFact}"\n\nИз галереи Насти: Кубы в искусстве`;
+        
+        if (navigator.share) {
+            navigator.share({
+                title: art.title,
+                text: text,
+                url: window.location.href
+            });
+        } else {
+            alert('Скопируйте ссылку:\n' + window.location.href + '#art' + currentArtId);
+        }
+    }
+    
+</script>
+
+
+
+<script>
+    // Данные о картинах
+    const artData = {
+        1: {
+            title: "мона кубиса",
+            description: "самый загадочный куб в истории искусства. его улыбка меняется в зависимости от угла зрения — то ли это игра света на гранях, то ли глубокая философская ирония. куб сохраняет тайну уже 500 лет.",
+            funFact: "изначально у куба было больше граней, но я сгладила углы, чтобы создать иллюзию глубины."
+        },
+        2: {
+            title: "крик куба",
+            description: "куб в момент экзистенциального ужаса. искажённые перспективы и кислотные цвета отражают внутреннюю тревогу геометрической формы в мире органических существ.",
+            funFact: "куб кричит не потому что страшно, а потому что обнаружил, что у него нет рта."
+        },
+        3: {
+            title: "Сын кубический",
+            description: "куб, парящий перед человеческим лицом, скрывает сущность за идеальной формой. сюрреалистичное утверждение: мы все скрываем свою истинную геометрию.",
+            funFact: "яблоко заменили на куб, потому что яблоко слишком органично для этой концепции."
+        },
+        4: {
+            title: "Автопортрет с кубом",
+            description: "куб с отрезанным углом как метафора творческих мук. жёлтые и синие мазки передают внутреннюю турбулентность геометрической души.",
+            funFact: "куб отрезал себе угол в приступе творческого безумия, но потом приклеил его обратно."
+        },
+        5: {
+            title: "мать куба",
+            description: "куб в строгом чёрном платье — символ геометрического материнства. гармония форм и сдержанная цветовая гамма создают атмосферу величавого спокойствия.",
+            funFact: "это первый куб, который согласился позировать 70 часов без движения."
+        },
+        6: {
+            title: "куб с жемчужной серёжкой",
+            description: "идеальные грани, мягкий свет и загадочный взгляд. куб демонстрирует, что совершенство формы может быть столь же притягательным, что и человеческая красота.",
+            funFact: "жемчужина на самом деле — идеально отполированный маленький кубик."
+        },
+        7: {
+            title: "создание куба",
+            description: "момент, когда бог даёт жизнь первому совершенному кубу. палец творца почти касается грани — символ передачи божественной геометрии.",
+            funFact: "изначально я хотела нарисовать шар, но потом передумала в пользу более философской формы."
+        },
+        8: {
+            title: "американский куб",
+            description: "куб с вилами — новый символ прагматичной американской мечты. суровый взгляд и чёткие грани отражают дух среднего запада.",
+            funFact: "вилы специально затуплены, чтобы куб случайно не проткнул пространство-время."
+        }
+    };
+    
+    
+    // Функции для модального окна
+    let currentArtId = 1;
+    
+   function showArtInfo(id) {
+    currentArtId = id;
+    const art = artData[id];
+    const modal = document.getElementById('artModal');
+    
+    // Заполняем данные
+    document.getElementById('modalArtImage').src = `куб${id}.png`;
+    document.getElementById('modalArtTitle').textContent = art.title;
+    document.getElementById('modalArtSubtitle').textContent = art.subtitle;
+    
+    document.getElementById('modalArtDescription').textContent = art.description;
+    document.getElementById('modalFunFact').textContent = art.funFact;
+    
+    // Показываем модальное окно
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+    
+    function shareArt() {
+        const art = artData[currentArtId];
+        const text = `Посмотри на ${art.title} — ${art.subtitle}!\n"${art.funFact}"\n\nИз галереи Насти: Кубы в искусстве`;
+        
+        if (navigator.share) {
+            navigator.share({
+                title: art.title,
+                text: text,
+                url: window.location.href
+            });
+        } else {
+            alert('Скопируйте ссылку:\n' + window.location.href + '#art' + currentArtId);
+        }
+    }
+    
+    // Закрытие по клику вне окна
+    window.onclick = function(event) {
+        const modal = document.getElementById('artModal');
+        if (event.target == modal) {
+            closeArtModal();
+        }
+    }
+    
+    // Закрытие по Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeArtModal();
+        }
+    });
+</script>
+
+<!-- ВИДЕО -->
+<section class="section">
+    <h2>моя история</h2>
+    
+    <div class="video-container">
+        <video controls class="my-video" width="100%" poster="video-preview.jpg">
+            <!-- ПРОБУЕМ РАЗНЫЕ ФОРМАТЫ -->
+            <source src="видео.mp4" type="video/mp4">
+
+            <!-- СООБЩЕНИЕ ЕСЛИ ВИДЕО НЕ РАБОТАЕТ -->
+            <div style="padding: 20px; background: #ffebee; border-radius: 10px; margin-top: 20px;">
+                <p>😢 Видео не загружается. Возможные причины:</p>
+                <ul style="text-align: left; margin: 10px 0 10px 20px;">
+                    <li>Файл не в той папке</li>
+                    <li>Неправильное название файла</li>
+                    <li>Формат не поддерживается</li>
+                </ul>
+                <button onclick="checkVideo()" style="padding: 10px 20px; background: #8a65cc; color: white; border: none; border-radius: 5px;">
+                    Проверить видео
+                </button>
+            </div>
+        </video>
+        <p style="margin-top: 15px; color: #666; text-align: center;">
+            "зелёный куб" — история в 11 кадрах
+        </p>
+    </div>
+</section>
+    
+    <section class="section">
+        <h2>мой шрифт</h2>
+        <p>знаете шрифт "bauhaus"?</p>
+        <p>этот лучше</p>
+
+        <a href="nastya.woff" class="download-btn" download id="downloadFont" download="nastya.woff" >
+            <i class="fas fa-download"></i> скачать шрифт
+        </a>
+    </section>
+    
+    <section class="meme">
+        <img src="носик.jpeg">
+    </section>
+    
+    <footer>
+        <p>© 2023 анастасия. все права защищены.</p>
+    </footer>
+
+    <script>
+        console.log("Шрифт NastyaFont должен быть подключен!");
+        document.querySelector('.download-btn').addEventListener('click', function() {
+        alert('Шрифт "NastyaFont" скачивается!');
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.fonts.check('1rem NastyaFont')) {
+                console.log('🎉 Шрифт NastyaFont успешно загружен!');
+            } else {
+                console.log('⚠️ Шрифт ещё загружается или не найден');
+            }
+        });
+
+    </script>
+</body>
+</html>
